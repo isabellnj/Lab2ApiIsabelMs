@@ -29,11 +29,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class ControladorPeliculas {
    
     public static List<Movie>arraylist = new ArrayList(Arrays.asList(
-        new Movie(1,"Pulp Fiction", 1994, "foto1.jpg"),
-        new Movie(2,"La vida es bella", 1997, "foto5.jpg"),
-        new Movie(3,"El club de la lucha (1999)", 1999, "foto4.jpg"),
-        new Movie(4,"la lista de Schindler (1993)", 1993, "foto3.jpg"),
-        new Movie(5,"la naranja mecánica (1971)", 1971, "foto2.jpg")
+        new Movie(1,"Pulp Fiction", 1994, "foto2.jpg", " Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor"),
+        new Movie(2,"La vida es bella", 1997, "foto3.jpg", " Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor"),
+        new Movie(3,"El club de la lucha (1999)", 1999, "foto4.jpg", " Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor"),
+        new Movie(4,"la lista de Schindler (1993)", 1993, "foto5.jpg", " Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor"),
+        new Movie(5,"la naranja mecánica (1971)", 1971, "foto1.jpg", " Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor")
         
      ));
 
@@ -52,7 +52,7 @@ public class ControladorPeliculas {
     ArrayList<Movie>movies = new ArrayList<>();
         for (Movie movie1: arraylist){
 
-            movies.add(new Movie(movie1.getId(), movie1.getTitle(), movie1.getYear(), movie1.getPoster()));
+            movies.add(new Movie(movie1.getId(), movie1.getTitle(), movie1.getYear(), movie1.getPoster(), movie1.getSinopsis()));
         }
     return movies;
     }
@@ -62,7 +62,7 @@ public class ControladorPeliculas {
     ArrayList<Movie>movie = new ArrayList<>();
         for (Movie movie1: arraylist){
              if (movie1.getTitle().contains(title)){
-                movie.add(new Movie(movie1.getId(), movie1.getTitle(), movie1.getYear(), movie1.getPoster()));
+                movie.add(new Movie(movie1.getId(), movie1.getTitle(), movie1.getYear(), movie1.getPoster(), movie1.getSinopsis()));
             }
         }
         return movie;
@@ -73,7 +73,7 @@ public class ControladorPeliculas {
     ArrayList<Movie>movies = new ArrayList<>();
         for (Movie movie1: arraylist){
             if (movie1.getYear()==year){
-                movies.add(new Movie(movie1.getId(), movie1.getTitle(), movie1.getYear(), movie1.getPoster()));
+                movies.add(new Movie(movie1.getId(), movie1.getTitle(), movie1.getYear(), movie1.getPoster(), movie1.getSinopsis()));
             }
          }
      return movies;
@@ -83,7 +83,7 @@ public class ControladorPeliculas {
     ArrayList<Movie>movie = new ArrayList<>();
         for (Movie movies: arraylist){
             if (movies.getTitle().contains(title) && movies.getYear()==year){
-                movie.add(new Movie( movies.getId(), movies.getTitle(), movies.getYear(), movies.getPoster()));
+                movie.add(new Movie( movies.getId(), movies.getTitle(), movies.getYear(), movies.getPoster(), movies.getSinopsis()));
             }
         }
     return movie;

@@ -32,6 +32,13 @@ public class FimsViewController {
    }
     
 
+   @GetMapping("/moviess/{id}")
+   public ModelAndView PeliculaDetail(@PathVariable("id") int id) {
+      ModelAndView mv = new ModelAndView("detailMovie");
+      mv.addObject("movies", ControladorPeliculas.MovieById(id));
+      return mv;
+
+   }
 
    
 
