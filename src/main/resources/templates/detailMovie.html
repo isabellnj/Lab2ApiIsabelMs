@@ -17,6 +17,7 @@ th:object="${movie}">
        <strong class="d-inline-block mb-2 text-success" th:text="*{title}"></strong>
        <h6 class="mb-0">
           <a class="text-dark" href="#" th:text="*{year}"></a>
+          <div th:text="*{year} == 2020 ? 'novedad'">novedad 2020</div>
        </h6>
        <div class="mb-1 text-muted small">Nov 11</div>
        <p class="card-text mb-auto" th:text="*{sinopsis}"></p>
