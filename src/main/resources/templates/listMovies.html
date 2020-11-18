@@ -14,23 +14,7 @@
 </header>
 </head>
 <body>
-    <script>
-       
-
-
-
-
-
-
-    </script>
-
-
-
-
-
-
-
-
+  
     <div class="container">
         <div class="row">
           <div class="col-12">
@@ -45,14 +29,11 @@
                 </thead>
                 <tbody>
                   <tr>
-                   
-
                     <td th:text="*{id}"></td>
                     <td th:href="@{/moviess/*{id}}">
                         <a th:href="@{|/moviess/*{id}|}" th:text="*{title}"></a>
                         <div th:text="*{year} == 2020 ? 'novedad'">novedad 2020</div>
                     </td>
-                    
                     <td class="w-25">
                         <img class="info" th:src="@{|/img/*{poster}|}" /> 
                     </td>
