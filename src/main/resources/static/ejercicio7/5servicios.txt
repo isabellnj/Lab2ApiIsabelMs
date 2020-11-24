@@ -1,0 +1,30 @@
+5 servicios de azure: 
+
+Azure App Service:
+Lo que permite es crear y hospedar aplicaciones web, trabajos en segundo planp, back-ends movileS
+API de Restful en el lenguaje de programación que prefiera sin tener que administrar
+la infraestructura.
+
+Eplorer Azure virtual Machines: 
+Permite crear y utilizar maquinas virtuales en la nube. Estas maquinas virtuales proporcionan
+una infraestructura como servicio (IaaS) en forma de un servidor virtualizado y se pueden usar
+de muchas formas.
+ 
+
+Azure SQL Database 
+
+Es un motor de base de datos de plataforma como servicio (PaaS) 
+totalmente administrado que se encarga de la mayoría de las funciones de 
+administración de bases de datos
+
+Azure Active Directory:
+
+Sirven para gestionar usuarios y grupos, también proveen de un completo 
+sistema de securización del acceso, single sign-on, integración y escalado.
+
+
+Azure funtions: 
+Se usan normalmente cuando se debe realizar un trabajo en respuesta a un evento, 
+a menudo a través de una solicitud REST, un temporizador o un mensaje de otro servicio
+de Azure, y cuando ese trabajo puede completarse rápidamente.
+
